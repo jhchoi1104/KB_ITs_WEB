@@ -1,0 +1,33 @@
+<div id="app">
+  x: <input type="text" v-model.number="x" /><br />
+  y: <input type="text" v-model.number="y" /><br />
+  덧셈 결과: {{sum}}
+</div>
+
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+<script type="text/javascript">
+  const vm = Vue.createApp({
+    name: 'App',
+    data() {
+      return { x: 0, y: 0, sum: 0 };
+    },
+    watch: {
+      x(current, old) {
+        console.log(`${current}--->${old}`);
+        let result = current + this.y;
+        if (Number.isNaN(result)) {
+          return (this.sum = 0);
+        }
+        return (this.sum = result);
+      },
+      y(current, old) {
+        console.log(`${current}--->${old}`);
+        let result = current + this.x;
+        if (Number.isNaN(result)) {
+          return (this.sum = 0);
+        }
+        return (this.sum = result);
+      },
+    },
+  }).mount('#app');
+</script>

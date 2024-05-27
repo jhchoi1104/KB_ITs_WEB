@@ -1,0 +1,35 @@
+<style>
+  .warning {
+    background-color: aqua;
+    color: blueviolet;
+  }
+</style>
+
+<div id="app">
+  1부터 100까지만 입력가능합니다.
+  <br />
+  점수:
+  <input type="text" v-model.number="num" :class="info" />
+  <img
+    src="https://contactsvc.bmaster.kro/img/error.png"
+    class="warnimage"
+    v-if="info.warning"
+  />
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+  const vm = Vue.createApp({
+    name: 'App',
+    data() {
+      return {
+        num: 50,
+      };
+    },
+    computed: {
+      info() {
+        return { warning: this.num < 1 || this.num > 100 };
+      },
+    },
+  }).mount('#app');
+</script>

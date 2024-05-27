@@ -1,0 +1,38 @@
+<div id="app">
+  금액: <input type="text" v-model.number="amount" /><br />
+  <button @click="desposit">입금</button>
+  <button @click="withdraw">인출</button>
+  <br />
+  <h3>계좌 잔고: {{balance}}</h3>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+  const vm = Vue.createApp({
+    name: 'App',
+    data() {
+      return {
+        balance: 0,
+        amount: 0,
+      };
+    },
+    methods: {
+      desposit() {
+        if (this.amount < 0) {
+          alert('입금은 0보다 커야 합니다.');
+        } else {
+          this.balance += this.amount;
+        }
+      },
+      withdraw() {
+        if (this.amount < 0) {
+          alert('입출은 0보다 커야 합니다.');
+        } else if (this.amount > this.balance) {
+          alert('잔액보다 더 많이 입출할 수 없습니다.');
+        } else {
+          this.balance -= this.amount;
+        }
+      },
+    },
+  }).mount('#app');
+</script>

@@ -1,0 +1,15 @@
+<div id="app">
+  <input type="text" :value="name" @click="(e) => e.target.value" />
+  <br />
+  이름: <span>{{name}}</span>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+  const vm = Vue.createApp({
+    name: 'App',
+    data() {
+      return { name: 0 };
+    },
+  }).mount('#app');
+</script>

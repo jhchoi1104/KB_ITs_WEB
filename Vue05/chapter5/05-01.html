@@ -1,0 +1,19 @@
+<div id="app">
+  금액: <input type="text" v-model.number="balance" /><br />
+  <button @click="amount += balance">입금</button>
+  <button @click="amount -= balance">인출</button> <br />
+  <h3>계좌 잔고: {{amount}}</h3>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+  const vm = Vue.createApp({
+    name: 'App',
+    data() {
+      return {
+        balance: 0,
+        amount: 0,
+      };
+    },
+  }).mount('#app');
+</script>

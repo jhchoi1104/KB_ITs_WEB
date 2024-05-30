@@ -4,8 +4,8 @@
     :class="{ 'list-group-item-success': todoItem.completed }"
     @click="$emit('toggle-completed', todoItem.id)"
   >
-    <span class="pointer" :class="{ 'todo-done': todoItem.completed }"
-      >{{ todoItem.todo }} {{ todoItem.completed ? '완료' : '' }}</span
+    <span class="pointer" :class="{ 'todo-done': todoItem.completed }">
+      {{ todoItem.todo }} {{ todoItem.completed ? '완료' : '' }}</span
     >
     <span
       class="float-end badge bg-secondary pointer"

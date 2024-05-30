@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <div class="card card-body bg-light">
-      <div class="title">::Todolist App</div>
+      <div class="title">:: TodoList App</div>
     </div>
     <div class="card card-default card-borderless">
       <div class="card-body">
@@ -24,7 +24,7 @@ let ts = new Date().getTime();
 
 export default {
   name: 'App',
-  components: { TodoList, InputTodo },
+  components: { InputTodo, TodoList },
   data() {
     return {
       todoList: [

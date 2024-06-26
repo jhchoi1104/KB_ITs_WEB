@@ -1,44 +1,30 @@
 package CLI_Framework;
 
 import CLI_Framework.command.*;
-import ch07.sec07.exam02.Parent;
-import ch08.sec09.InterfaceC;
+import CLI_Framework.ui.*;
 
-import java.util.Scanner;
 
-public class App {
+public abstract class App {
     Menu menu;
-    Command[] commands;
 
     public App() {
-        menu = new Menu();
-        commands = new Command[] {
-                new InitScoresCommand(),
-                new GetScoresCommand(),
-                new PrintScoreCommand(),
-                new AnalizeCommand(),
-                new ExitCommand()
-        };
     }
 
-    public b
+    public void init() {
+        menu = new Menu();
+        createMenu(menu);
+        menu.add(new MenuItem("종료", new ExitCommand()));
+    }
 
-
-    public void executeCommand(int selectNo) {
-        Command command = commands[selectNo-1];
-        command.execute();
+    public void createMenu(Menu menu) {
     }
 
     public void run() {
-        while(run) {
+        init();
+        while(true) {
             menu.printMenu();
-            int selectNo = menu.getSelect();
-            executeCommand(selectNo);
+            Command command = menu.getSelect();
+            command.execute();
         }
-    }
-
-    public static void main(String[] args) {
-        App app = new App();
-        app.run();
     }
 }

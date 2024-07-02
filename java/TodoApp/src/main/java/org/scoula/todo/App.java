@@ -1,4 +1,4 @@
-package org.scoula.lib.cli;
+package org.scoula.todo;
 
 import org.scoula.lib.cli.command.Command;
 import org.scoula.lib.cli.command.ExitCommand;

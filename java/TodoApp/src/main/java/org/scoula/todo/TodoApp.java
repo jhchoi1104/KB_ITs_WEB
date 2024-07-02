@@ -1,4 +1,4 @@
-package org.scoula.lib.cli;
+package org.scoula.todo;
 
 import org.scoula.lib.cli.ui.Menu;
 import org.scoula.lib.cli.ui.MenuItem;

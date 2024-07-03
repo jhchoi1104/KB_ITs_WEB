@@ -1,2 +1,17 @@
-package org.scoula.todo.command;public class DeleteTodoCommand {
+package org.scoula.todo.command;
+
+import org.scoula.lib.cli.command.Command;
+import org.scoula.lib.cli.ui.Input;
+import org.scoula.todo.dao.TodoListDao;
+
+public class DeleteTodoCommand implements Command {
+    TodoListDao dao = TodoListDao.getInstance();
+
+    @Override
+    public void execute() {
+        int id = Input.getInt("삭제할 Todo id: ");
+        dao.delete(id);
+
+        System.out.println();
+    }
 }

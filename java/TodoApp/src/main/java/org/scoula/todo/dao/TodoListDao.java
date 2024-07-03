@@ -5,16 +5,16 @@ import org.scoula.todo.domain.Todo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TodoDao {
-    private static TodoDao instance = new TodoDao();
+public class TodoListDao {
+    private static TodoListDao instance = new TodoListDao();
 
-    public static TodoDao getInstance() {
+    public static TodoListDao getInstance() {
         return instance;
     }
 
     private List<Todo> list;
 
-    private TodoDao() {
+    private TodoListDao() {
         list = new ArrayList<>();
         for (int i =0;i<10;i++) {
             Todo todo = Todo.builder()

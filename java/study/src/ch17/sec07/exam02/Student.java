@@ -1,5 +1,10 @@
-package ch17.sec07;
+package ch17.sec07.exam02;
 
+import lombok.Getter;
+
+import java.util.Comparator;
+
+@Getter
 public class Student implements Comparable<Student> {
     private String name;
     private int score;
@@ -8,9 +13,6 @@ public class Student implements Comparable<Student> {
         this.name = name;
         this.score = score;
     }
-
-    public String getName() {return name;};
-    public int getScore() {return score;}
 
     @Override
     public int compareTo(Student o) {

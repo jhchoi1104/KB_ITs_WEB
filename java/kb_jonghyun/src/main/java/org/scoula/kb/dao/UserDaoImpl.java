@@ -15,7 +15,7 @@ public class UserDaoImpl implements UserDao {
     // users 테이블 관련 sql 명령어
     private String user_list = "select * from users";
     private String user_get = "select * from users where id=?";
-    private String user_insert = "insert into users valus(?,?,?,?)";
+    private String user_insert = "insert into users values(?,?,?,?)";
     private String user_update = "update users set name =?, role=? where id=?";
     private String user_delete = "delete from users where id =?";
 

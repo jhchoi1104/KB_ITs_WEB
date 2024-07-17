@@ -44,7 +44,7 @@ class UserDaoTest {
     @Order(3)
     void get() throws SQLException {
         UserV0 user = dao.get("ssam10").orElseThrow(NoSuchElementException::new);
-        Assertions.assertNull(user);
+        Assertions.assertNotNull(user);
     }
 
     @Test
@@ -57,12 +57,11 @@ class UserDaoTest {
         Assertions.assertEquals(1, count);
     }
 
-    private UserVO map(ResultSet rs) throws SQLException {
-        UserVO user = new UserVO();
-        user.setId(rs.getString("ID"));
-        user.setPassword(rs.getString("PASSWORD"));
-        user.setName(rs.getString("NAME"));
-        user.setRole(rs.getString("ROLE"));
-        return user;
+    @Test
+    @DisplayName("user를 삭제합니다.")
+    @Order(5)
+    void delete() throws SQLException {
+        int count = dao.delete("ssam10");
+        Assertions.assertEquals(1, count);
     }
 }

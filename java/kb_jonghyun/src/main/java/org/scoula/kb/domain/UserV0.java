@@ -4,9 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 
 public class UserV0 {
     private String id;
@@ -14,3 +11,5 @@ public class UserV0 {
     private String name;
     private String role;
 }
+
+

@@ -12,6 +12,10 @@
     <title>Title</title>
 </head>
 <body>
+
+<%@ include file="navbar.jsp"%>
+<%--<jsp:include page="navbar.jsp"></jsp:include>--%>
+
 <c:if test="${role=='ADMIN'}">관리자</c:if>
 <c:if test="${role!='ADMIN'}">일반회원</c:if>
 
@@ -19,8 +23,8 @@
     <c:forEach var="member" items="${members}" varStatus="state">
         <tr>
             <td>${state.index}</td>
-            <td>${state.name}</td>
-            <td>${state.userid}</td>
+            <td>${member.name}</td>
+            <td>${member.passwd}</td>
         </tr>
     </c:forEach>
 </table>

@@ -1,8 +1,12 @@
 package org.scoula.ex3;
 
+import org.scoula.ex3.dai.LoingDTO;
+import org.scoula.ex3.dai.Member;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
+import javax.swing.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -11,19 +15,20 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userid = request.getParameter("userid");
-        String password = request.getParameter("passwd");
+        String passwd = request.getParameter("passwd");
 
-        // 응답 내보내기
-        response.setContentType("text/html;charset=UTF-8");
+        LoingDTO loingDTO = new LoingDTO(userid, passwd);
 
-        // 자바 I/O
-        PrintWriter out = response.getWriter();
+        request.setAttribute("userid",userid);
+        request.setAttribute("passwd",passwd);
 
-        // html 작성 및 출력
-        out.print("<html><body>");
-        out.print("아이디값: "+ userid +"<br>");
-        out.print("비밀번호값: "+ password +"<br>");
-        out.print("</body></html>");
+        request.setAttribute("login",loingDTO);
+
+        HttpSession session = request.getSession();
+        Member member = new Member("홍길동", userid);
+        session.setAttribute("user",member);
+
+        request.getRequestDispatcher("login.jsp").forward(request,response);
     }
 
     @Override

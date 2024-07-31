@@ -11,6 +11,8 @@
     <title>Title</title>
 </head>
 <body>
+
+<%@ include file="navbar.jsp"%>
 <h1>getParameter 실습</h1>
 <form action="login" method="post">
     <fieldset>

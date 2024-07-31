@@ -7,11 +7,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
-</html>
+
+<c:if test="${empty user}">
+    <a href="#">로그인</a> | <a href="#">회원가입</a>
+</c:if>
+<c:if test="${!empty user}">
+    ${user.name} | <a href="#">로그아웃</a>
+</c:if>
+<hr>

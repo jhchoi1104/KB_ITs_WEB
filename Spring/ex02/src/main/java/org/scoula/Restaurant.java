@@ -1,15 +1,14 @@
-package org.scoula.controller;
+package org.scoula;
 
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 @Data
+@RequiredArgsConstructor
 public class Restaurant {
-    // 의존객체
-    // Restaurant(Chef chef);
-    // void set Chef(chef chef);
-    @Autowired
-    private Chef chef;
+//    @Autowired
+    final private Chef chef;
 }

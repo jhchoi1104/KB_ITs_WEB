@@ -1,4 +1,4 @@
-package org.scoula.controller;
+package org.scoula;
 
 import org.springframework.stereotype.Component;
 

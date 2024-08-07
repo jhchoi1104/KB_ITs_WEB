@@ -1,12 +1,11 @@
-package org.scoula.domain;
+package org.scoula.board.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -15,8 +14,10 @@ import java.util.Date;
 public class BoardVO {
     private Long no;
     private String title;
+    private String name;
+    private String sex;
     private String content;
     private String writer;
-    private Date regDate;
-    private Date updateDate;
+    private LocalDateTime regDate;
+    private LocalDateTime updateDate;
 }

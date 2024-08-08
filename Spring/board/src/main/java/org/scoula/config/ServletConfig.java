@@ -16,7 +16,7 @@ import org.springframework.web.servlet.view.JstlView;
 // ??
 @EnableWebMvc
 // 컨트롤러를 찾는 주석. 컨트롤러가 위치하는 패키지를 넣어준다.
-@ComponentScan(basePackages={"org.scoula.controller", "org.scoula.exception"})
+@ComponentScan(basePackages={"org.scoula.controller","org.scoula.board.controller", "org.scoula.exception"})
 public class ServletConfig implements WebMvcConfigurer {
     // 정적인 파일은 Dispatcher에서 관리하지 않겠다.
     // 그런 파일들은 resources 폴더에서 관리하겠다.

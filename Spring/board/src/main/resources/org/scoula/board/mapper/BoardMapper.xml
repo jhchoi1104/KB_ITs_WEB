@@ -5,18 +5,31 @@
 
 <mapper namespace="org.scoula.board.mapper.BoardMapper">
     <insert id="create">
-        insert into tbl_board (title, name, sex, content, writer)
-        values (#{title},#{name},#{sex},#{content},#{writer})
+        insert into tbl_board(title,content,writer) values (#{title},#{content},#{writer})
 
         <selectKey resultType="Long" keyProperty="no" keyColumn="no" order="AFTER">
-            select last_insert_ID()
+            select last_insert_id()
         </selectKey>
     </insert>
 
+    <update id="update">
+        update tbl_board set
+                             title=#{title},
+                             content=#{content},
+                             writer=#{writer},
+                             update_date=now()
+        where no =#{no}
+    </update>
+    <delete id="delete">
+        delete from tbl_board where no=#{no}
+    </delete>
+
+
     <select id="getList" resultType="org.scoula.board.domain.BoardVO">
-        select * from tbl_board
+        select * from tbl_board order by no desc
     </select>
+
     <select id="get" resultType="org.scoula.board.domain.BoardVO">
-        select * from tbl_board where no = #{no}
+        select * from tbl_board where no=#{no}
     </select>
 </mapper>

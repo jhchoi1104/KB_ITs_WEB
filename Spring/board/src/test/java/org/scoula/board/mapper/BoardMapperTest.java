@@ -21,29 +21,46 @@ class BoardMapperTest {
     private BoardMapper mapper;
 
     @Test
-    @DisplayName("BoardMapper의 목록 불러오기")
+    @DisplayName("BoardMapper의 목록 보기")
     void getList() {
-        for(BoardVO board: mapper.getList()) {
+        for(BoardVO board : mapper.getList()) {
             log.info(board);
         }
     }
 
     @Test
-    @DisplayName("Board 목록 하나 가져오기")
+    @DisplayName("Board 목록 하나 보기")
     void get() {
-        BoardVO board = mapper.get(1L);
+        log.info(mapper.get(1L));
+    }
+
+    @Test
+    @DisplayName("목록 하나 추가하기")
+    void create() {
+        BoardVO board = new BoardVO();
+        board.setTitle("새로 작성하는 글");
+        board.setContent("새로 작성된 내용");
+        board.setWriter("종현최");
+        mapper.create(board);
         log.info(board);
     }
 
     @Test
-    @DisplayName("Board 추가하기")
-    void create() {
+    @DisplayName("목록 하나 수정하기")
+    void update() {
         BoardVO board = new BoardVO();
-        board.setName("승민");
-        board.setTitle("승민의 작성");
-        board.setWriter("정승민");
-        board.setSex("남");
-        mapper.create(board);
+        board.setNo(5L);
+        board.setTitle("수정된 제목");
+        board.setContent("수정된 내용");
+        board.setWriter("수정된 종현최");
+
+        mapper.update(board);
         log.info(board);
+    }
+
+    @Test
+    @DisplayName("목록 하나 삭제하기")
+    void delete() {
+        log.info(mapper.delete(4L));
     }
 }

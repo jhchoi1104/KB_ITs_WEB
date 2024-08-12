@@ -6,9 +6,7 @@ import org.scoula.board.dto.BoardDTO;
 import org.scoula.board.service.BoardService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @Log4j
@@ -36,6 +34,27 @@ public class BoardController {
 
         return "redirect:/board/list";
     }
+    // 요청한 넘버에 보드를 jsp로 넘긴다.
+    @GetMapping({"/get", "/update"})
+    public void get(@RequestParam("no") Long no, Model model) {
+        log.info("/get or update");
+        model.addAttribute("board", service.get(no));
+    }
 
+    @PostMapping("/update")
+    public String update(BoardDTO board) {
+        log.info("update: "+board);
+        service.update(board);
+
+        return "redirect:/board/list";
+    }
+
+    @PostMapping("/delete")
+    public String delete(@RequestParam("no") Long no) {
+        log.info("delete..."+no);
+        service.delete(no);
+
+        return "redirect:/board/list";
+    }
 
 }

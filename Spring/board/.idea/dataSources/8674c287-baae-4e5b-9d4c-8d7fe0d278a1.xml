@@ -950,7 +950,7 @@ scoula_db|schema||scoula||UPDATE|G</Grants>
     </schema>
     <schema id="290" parent="1" name="scoula_db">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-08-08.05:33:02</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-08-13.00:55:47</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="291" parent="1" name="scoula"/>
@@ -958,42 +958,99 @@ scoula_db|schema||scoula||UPDATE|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="293" parent="292" name="no">
-      <AutoIncrement>6</AutoIncrement>
+    <table id="293" parent="290" name="tbl_board_attachment">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="294" parent="292" name="no">
+      <AutoIncrement>10</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="294" parent="292" name="title">
+    <column id="295" parent="292" name="title">
       <DasType>varchar(200)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="295" parent="292" name="content">
+    <column id="296" parent="292" name="content">
       <DasType>text|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="296" parent="292" name="writer">
+    <column id="297" parent="292" name="writer">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="297" parent="292" name="reg_date">
+    <column id="298" parent="292" name="reg_date">
       <DasType>datetime|0s</DasType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <Position>5</Position>
     </column>
-    <column id="298" parent="292" name="update_date">
+    <column id="299" parent="292" name="update_date">
       <DasType>datetime|0s</DasType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <Position>6</Position>
     </column>
-    <index id="299" parent="292" name="PRIMARY">
+    <index id="300" parent="292" name="PRIMARY">
       <ColNames>no</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="300" parent="292" name="PRIMARY">
+    <key id="301" parent="292" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="302" parent="293" name="no">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="303" parent="293" name="filename">
+      <DasType>varchar(256)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="304" parent="293" name="path">
+      <DasType>varchar(256)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="305" parent="293" name="content_type">
+      <DasType>varchar(56)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="306" parent="293" name="size">
+      <DasType>int|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="307" parent="293" name="bno">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="308" parent="293" name="reg_date">
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <Position>7</Position>
+    </column>
+    <foreign-key id="309" parent="293" name="tbl_board_attachment_ibfk_1">
+      <ColNames>bno</ColNames>
+      <RefColNames>no</RefColNames>
+      <RefTableName>tbl_board</RefTableName>
+    </foreign-key>
+    <index id="310" parent="293" name="PRIMARY">
+      <ColNames>no</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="311" parent="293" name="bno">
+      <ColNames>bno</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="312" parent="293" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

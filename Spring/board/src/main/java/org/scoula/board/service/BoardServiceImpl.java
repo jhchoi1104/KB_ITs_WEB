@@ -2,11 +2,18 @@ package org.scoula.board.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j;
+import org.scoula.board.domain.BoardAttachmentVO;
+import org.scoula.board.domain.BoardVO;
 import org.scoula.board.dto.BoardDTO;
 import org.scoula.board.mapper.BoardMapper;
+import org.scoula.common.util.UploadFileName;
+import org.scoula.common.util.UploadFiles;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
@@ -16,6 +23,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class BoardServiceImpl implements BoardService{
     final private BoardMapper mapper;
+    private final static String BASE_DIR = "c:/upload/board";
 
     @Override
     public List<BoardDTO> getList() {
@@ -35,11 +43,31 @@ public class BoardServiceImpl implements BoardService{
                 .orElseThrow(NoSuchElementException::new);
     }
 
+    private void upload(Long bno, List<MultipartFile> files) {
+        for (MultipartFile part: files) {
+            if(part.isEmpty()) continue;
+            try {
+                String uploadPath = UploadFiles.upload(BASE_DIR, part);
+                BoardAttachmentVO attach = BoardAttachmentVO.of(part,bno,uploadPath);
+                mapper.createAttachment(attach);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    @Transactional
     @Override
     public void create(BoardDTO board) {
         log.info("create............"+ board);
 
-        mapper.create(board.toVO());
+        BoardVO boardVO = board.toVO();
+        mapper.create(boardVO);
+
+        List<MultipartFile> files = board.getFiles();
+        if(files != null && !files.isEmpty()) {
+            upload(boardVO.getNo(), files);
+        }
     }
 
     @Override
@@ -55,4 +83,16 @@ public class BoardServiceImpl implements BoardService{
 
         return mapper.delete(no) == 1;
     }
+
+    @Override
+    public BoardAttachmentVO getAttachment(Long no) {
+        return mapper.getAttachment(no);
+    }
+
+    @Override
+    public boolean deleteAttachment(Long no) {
+        return mapper.deleteAttachment(no)==1;
+    }
+
+
 }

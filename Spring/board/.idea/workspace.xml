@@ -5,21 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6babc9ec-9170-4457-83bb-c7aa2a7802ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/menu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/domain/BoardAttachmentVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/common/util/UploadFileName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/common/util/UploadFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/board.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8674c287-baae-4e5b-9d4c-8d7fe0d278a1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8674c287-baae-4e5b-9d4c-8d7fe0d278a1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/scoula/board/controller/BoardControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/scoula/board/controller/BoardControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board.sql" beforeDir="false" afterPath="$PROJECT_DIR$/board.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/board/domain/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/domain/BoardVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/board/dto/BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/dto/BoardDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/board/mapper/BoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/mapper/BoardMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/board/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/board/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/scoula/board/mapper/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scoula/board/mapper/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,9 +144,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -569,7 +571,8 @@
       <workItem from="1723428160743" duration="3668000" />
       <workItem from="1723431889587" duration="1313000" />
       <workItem from="1723433217927" duration="163000" />
-      <workItem from="1723433394548" duration="7425000" />
+      <workItem from="1723433394548" duration="7992000" />
+      <workItem from="1723507882904" duration="18178000" />
     </task>
     <servers />
   </component>

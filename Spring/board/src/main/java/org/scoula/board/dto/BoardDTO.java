@@ -4,9 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.domain.BoardVO;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -20,6 +24,10 @@ public class BoardDTO {
     private Date regDate;
     private Date updateDate;
 
+    private List<BoardAttachmentVO> attaches;
+
+    List<MultipartFile> files = new ArrayList<>();
+
     // VO -> DTO 변환
     public static BoardDTO of(BoardVO vo) {
         return vo == null ? null : BoardDTO.builder()
@@ -29,6 +37,7 @@ public class BoardDTO {
                 .writer(vo.getWriter())
                 .regDate(vo.getRegDate())
                 .updateDate(vo.getUpdateDate())
+                .attaches(vo.getAttaches())
                 .build();
     }
     // DTO -> VO 변환
@@ -40,6 +49,7 @@ public class BoardDTO {
                 .writer(writer)
                 .regDate(regDate)
                 .updateDate(updateDate)
+                .attaches(attaches)
                 .build();
     }
 }

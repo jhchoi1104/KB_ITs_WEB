@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6babc9ec-9170-4457-83bb-c7aa2a7802ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/domain/BoardAttachmentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/domain/BoardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/dto/BoardDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/mapper/BoardMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/service/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/exception/ApiExceptionAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/common/util/UploadFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/common/util/UploadFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/domain/BoardAttachmentVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/domain/BoardVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/dto/BoardDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/mapper/BoardMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/service/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/service/BoardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/exception/ApiExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../board/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../board/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../board/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../board/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../board/src/main/java/org/scoula/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../board/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../board/src/main/java/org/scoula/common/util/UploadFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../board/src/main/java/org/scoula/common/util/UploadFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../board/src/main/webapp/WEB-INF/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../board/src/main/webapp/WEB-INF/views/board/get.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="boardapi" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -195,8 +200,10 @@
     &quot;Gradle.BoardServiceImplTest.getList.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.BoardServiceImplTest.update.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build board.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build boardapi.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Tomcat Server.Tomcat 9.0.91.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.93.executor&quot;: &quot;Run&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -207,6 +214,10 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.1454219&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.21199587&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -231,7 +242,7 @@
       <recent name="org.scoula.board.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.91">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.93">
     <configuration name="BoardControllerTest.delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -434,25 +445,20 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : org.scoula : board-1.0-SNAPSHOT.war" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.91" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.91" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+    <configuration name="Tomcat 9.0.93" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.91" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Gradle : org.scoula : board-1.0-SNAPSHOT.war">
+        <artifact name="Gradle : org.scoula : boardapi-1.0-SNAPSHOT.war">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="6acbf4b2-49ed-4ef2-916d-939b514d305d" />
-        <option name="HTTP_PORT" value="8081" />
-        <option name="JNDI_PORT" value="1098" />
+        <option name="BASE_DIRECTORY_NAME" value="2aec9471-1765-4198-8eb6-158a0ceedd93" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -460,7 +466,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51346" />
+        <option name="DEBUG_PORT" value="52431" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -525,7 +531,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : org.scoula : board-1.0-SNAPSHOT.war" />
+          <artifact name="Gradle : org.scoula : boardapi-1.0-SNAPSHOT.war" />
         </option>
       </method>
     </configuration>
@@ -535,7 +541,7 @@
       <item itemvalue="Gradle.BoardControllerTest.update" />
       <item itemvalue="Gradle.BoardServiceImplTest.delete" />
       <item itemvalue="Gradle.BoardServiceImplTest.getList" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.91" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.93" />
       <item itemvalue="TomEE Server.Unnamed" />
     </list>
     <recent_temporary>
@@ -571,10 +577,15 @@
       <workItem from="1723433217927" duration="163000" />
       <workItem from="1723433394548" duration="7992000" />
       <workItem from="1723507882904" duration="18178000" />
-      <workItem from="1723594437654" duration="2448000" />
-      <workItem from="1723600848487" duration="19000" />
-      <workItem from="1723612582213" duration="177000" />
-      <workItem from="1723624701607" duration="123000" />
+      <workItem from="1723594437654" duration="2294000" />
+      <workItem from="1723596901061" duration="2057000" />
+      <workItem from="1723599000621" duration="40000" />
+      <workItem from="1723599051612" duration="569000" />
+      <workItem from="1723599632751" duration="1784000" />
+      <workItem from="1723601428075" duration="3199000" />
+      <workItem from="1723604653416" duration="1539000" />
+      <workItem from="1723611755739" duration="11000" />
+      <workItem from="1723612505914" duration="5767000" />
     </task>
     <servers />
   </component>

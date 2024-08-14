@@ -58,7 +58,7 @@ public class BoardServiceImpl implements BoardService{
 
     @Transactional
     @Override
-    public void create(BoardDTO board) {
+    public BoardDTO create(BoardDTO board) {
         log.info("create............"+ board);
 
         BoardVO boardVO = board.toVO();
@@ -68,20 +68,24 @@ public class BoardServiceImpl implements BoardService{
         if(files != null && !files.isEmpty()) {
             upload(boardVO.getNo(), files);
         }
+        return get(boardVO.getNo());
     }
 
     @Override
-    public boolean update(BoardDTO board) {
+    public BoardDTO update(BoardDTO board) {
         log.info("update......."+board);
+        mapper.update(board.toVO());
 
-        return mapper.update(board.toVO()) == 1;
+        return get(board.getNo());
     }
 
     @Override
-    public boolean delete(Long no) {
+    public BoardDTO delete(Long no) {
         log.info("delete......." + no);
+        BoardDTO board = get(no);
 
-        return mapper.delete(no) == 1;
+        mapper.delete(no);
+        return board;
     }
 
     @Override

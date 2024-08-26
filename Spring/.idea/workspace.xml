@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="63ef9890-303c-4bd2-86d0-103d23eee7ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/apiserver/src/main/java/org/scoula/security/account/dto/AuthResultDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiserver/src/main/java/org/scoula/security/account/dto/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiserver/src/main/java/org/scoula/security/account/dto/UserInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiserver/src/main/java/org/scoula/security/util/JsonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiserver/src/main/java/org/scoula/security/util/JwtProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiserver/src/test/java/org/scoula/security/util/JwtProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boardapi/src/main/java/org/scoula/weather/controller/WeatherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boardapi/src/main/webapp/WEB-INF/views/weather/today.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/login.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/java/org/scoula/controller/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/java/org/scoula/security/account/domain/AuthVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/java/org/scoula/security/account/domain/CustomUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/java/org/scoula/security/account/domain/MemberVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/java/org/scoula/security/account/mapper/UserDetailsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/java/org/scoula/security/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/java/org/scoula/security/config/SecurityInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/java/org/scoula/security/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/resources/org/scoula/security/account/mapper/UserDetailsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/webapp/WEB-INF/views/security/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/webapp/WEB-INF/views/security/all.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/webapp/WEB-INF/views/security/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/webapp/WEB-INF/views/security/logout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/main/webapp/WEB-INF/views/security/member.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/test/java/org/scoula/security/account/mapper/UserDetailsMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secserver/src/test/java/org/scoula/security/config/PasswordEncoderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/shop.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/src/main/java/org/scoula/shop/controller/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/src/main/java/org/scoula/shop/domain/ShopVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/src/main/java/org/scoula/shop/dto/ShopDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/src/main/java/org/scoula/shop/mapper/ShopMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/src/main/java/org/scoula/shop/service/ShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/src/main/java/org/scoula/shop/service/ShopServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/src/main/resources/org/scoula/shop/mapper/ShopMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/src/test/java/org/scoula/shop/mapper/ShopMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingMall/src/test/java/org/scoula/shop/service/ShopServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/board/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boardapi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boardapi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boardapi/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/boardapi/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boardapi/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/boardapi/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boardapi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/boardapi/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jhchoi1104"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jhchoi1104/KB_ITs_WEB.git",
+    "accountId": "1b7057de-9025-4271-80cd-c5e2094b3de2"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2kxUuVYpXM2Ra070KObvtaQIyA9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63ef9890-303c-4bd2-86d0-103d23eee7ca" name="Changes" comment="" />
+      <created>1724224945053</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724224945053</updated>
+      <workItem from="1724224945972" duration="16000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

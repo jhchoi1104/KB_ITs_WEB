@@ -1,4 +1,4 @@
-package org.scoula.security.domain;
+package org.scoula.security.account.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,6 +16,7 @@ public class MemberVO {
     private String username;
     private String password;
     private String email;
+    private Date birth;
     private Date regDate;
     private Date updateDate;
 

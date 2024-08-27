@@ -15,7 +15,7 @@ import org.springframework.web.servlet.view.JstlView;
 // 컨트롤러를 찾는 주석. 컨트롤러가 위치하는 패키지를 넣어준다.
 @ComponentScan(basePackages={"org.scoula.controller",
         "org.scoula.exception",
-        "org.scoula.board.controller"})
+        "org.scoula.board.controller", "org.scoula.member.controller"})
 public class ServletConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {

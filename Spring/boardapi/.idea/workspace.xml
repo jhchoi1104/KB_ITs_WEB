@@ -5,73 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6babc9ec-9170-4457-83bb-c7aa2a7802ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/common/util/UploadFileName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/common/util/UploadFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/exception/ApiExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/resources/org/scoula/board.mapper/BoardMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/account/dto/AuthResultDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/account/dto/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/account/dto/UserInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/filter/AuthenticationErrorFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/filter/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/filter/JwtUsernamePasswordAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/handler/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/handler/CustomAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/handler/LoginFailureHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/handler/LoginSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/util/JsonResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/util/JwtProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/test/java/org/scoula/security/util/JwtProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../board/src/main/java/org/scoula/exception/ApiExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/weather/controller/WeatherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/weather/today.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/login.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/controller/SecurityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/account/domain/AuthVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/account/domain/CustomUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/account/domain/MemberVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/account/mapper/UserDetailsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/config/SecurityInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/service/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/resources/org/scoula/security/account/mapper/UserDetailsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/webapp/WEB-INF/views/security/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/webapp/WEB-INF/views/security/all.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/webapp/WEB-INF/views/security/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/webapp/WEB-INF/views/security/logout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/webapp/WEB-INF/views/security/member.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/test/java/org/scoula/security/account/mapper/UserDetailsMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/test/java/org/scoula/security/config/PasswordEncoderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/shop.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/controller/ShopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/domain/ShopVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/dto/ShopDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/mapper/ShopMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/service/ShopService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/service/ShopServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/resources/org/scoula/shop/mapper/ShopMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/layouts/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/layouts/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/layouts/menu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/shop/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/shop/get.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/shop/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/shop/update.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/resources/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/resources/images/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/resources/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/test/java/org/scoula/shop/controller/ShopControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/test/java/org/scoula/shop/mapper/ShopMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/test/java/org/scoula/shop/service/ShopServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../board/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../board/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/common/util/UploadFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/common/util/UploadFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/dto/MemberUpdateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/dto/MemberUpdateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/mapper/MemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/components/layouts/menu/AccountMenuGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/components/layouts/menu/AccountMenuGroup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/components/layouts/menu/AccountMenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/components/layouts/menu/AccountMenuItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/components/layouts/menu/LogoutMenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/components/layouts/menu/LogoutMenuItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/auth/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/auth/LoginPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/stores/counter.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -648,6 +597,7 @@
       <workItem from="1724051874572" duration="4000" />
       <workItem from="1724632044327" duration="828000" />
       <workItem from="1724647887064" duration="217000" />
+      <workItem from="1724815879539" duration="58000" />
     </task>
     <servers />
   </component>

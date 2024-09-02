@@ -5,79 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6babc9ec-9170-4457-83bb-c7aa2a7802ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/domain/BoardAttachmentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/domain/BoardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/dto/BoardDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/mapper/BoardMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/service/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/common/util/UploadFileName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/common/util/UploadFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/exception/ApiExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/account/dto/AuthResultDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/account/dto/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/account/dto/UserInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/filter/AuthenticationErrorFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/filter/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/filter/JwtUsernamePasswordAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/handler/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/handler/CustomAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/handler/LoginFailureHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/handler/LoginSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/util/JsonResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/main/java/org/scoula/security/util/JwtProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../apiserver/src/test/java/org/scoula/security/util/JwtProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/exception/ApiExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/weather/controller/WeatherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/webapp/WEB-INF/views/weather/today.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/login.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/controller/SecurityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/account/domain/AuthVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/account/domain/CustomUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/account/domain/MemberVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/account/mapper/UserDetailsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/config/SecurityInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/java/org/scoula/security/service/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/resources/org/scoula/security/account/mapper/UserDetailsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/webapp/WEB-INF/views/security/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/webapp/WEB-INF/views/security/all.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/webapp/WEB-INF/views/security/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/webapp/WEB-INF/views/security/logout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/main/webapp/WEB-INF/views/security/member.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/test/java/org/scoula/security/account/mapper/UserDetailsMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../secserver/src/test/java/org/scoula/security/config/PasswordEncoderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/shop.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/controller/ShopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/domain/ShopVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/dto/ShopDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/mapper/ShopMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/service/ShopService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/java/org/scoula/shop/service/ShopServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/resources/org/scoula/shop/mapper/ShopMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/layouts/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/layouts/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/layouts/menu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/shop/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/shop/get.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/shop/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/WEB-INF/views/shop/update.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/resources/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/resources/images/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/main/webapp/resources/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/test/java/org/scoula/shop/controller/ShopControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/test/java/org/scoula/shop/mapper/ShopMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shoppingMall/src/test/java/org/scoula/shop/service/ShopServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/login.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/login.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/dto/ChangePasswordDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/dto/ChangePasswordDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/mapper/MemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/resources/org/scoula/board.mapper/BoardMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/api/authApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/api/authApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/api/boardApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/api/boardApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/HomePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/auth/ChangePasswordPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/auth/ChangePasswordPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/auth/ProfilePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/auth/ProfilePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/board/BoardListPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/board/BoardListPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/router/board.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/router/board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/stores/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/stores/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../boardapi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../boardapi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../boardapi/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../boardapi/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../boardapi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../boardapi/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,43 +186,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.BoardControllerTest.delete.executor": "Run",
-    "Gradle.BoardControllerTest.get.executor": "Run",
-    "Gradle.BoardControllerTest.update.executor": "Run",
-    "Gradle.BoardMapperTest.create.executor": "Run",
-    "Gradle.BoardMapperTest.delete.executor": "Run",
-    "Gradle.BoardMapperTest.get.executor": "Run",
-    "Gradle.BoardMapperTest.getList.executor": "Run",
-    "Gradle.BoardMapperTest.update.executor": "Run",
-    "Gradle.BoardServiceImplTest.create.executor": "Run",
-    "Gradle.BoardServiceImplTest.delete.executor": "Run",
-    "Gradle.BoardServiceImplTest.get.executor": "Run",
-    "Gradle.BoardServiceImplTest.getList.executor": "Run",
-    "Gradle.BoardServiceImplTest.update.executor": "Run",
-    "Gradle.Build board.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 9.0.91.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/KB_Fullstack/Web01_code/Spring/board",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.BoardControllerTest.delete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardControllerTest.get.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardControllerTest.update.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardMapperTest.create.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardMapperTest.delete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardMapperTest.get.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardMapperTest.getList.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardMapperTest.update.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardServiceImplTest.create.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardServiceImplTest.delete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardServiceImplTest.get.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardServiceImplTest.getList.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardServiceImplTest.update.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build board.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.91.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/KB_Fullstack/Web01_code/Spring/board&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\KB_Fullstack\Web01_code\Spring\board\src\main\webapp\WEB-INF\views\layouts" />
@@ -640,6 +587,8 @@
       <workItem from="1724113024636" duration="19000" />
       <workItem from="1724131486007" duration="2621000" />
       <workItem from="1724643109800" duration="1000000" />
+      <workItem from="1725238711283" duration="540000" />
+      <workItem from="1725239504314" duration="20000" />
     </task>
     <servers />
   </component>

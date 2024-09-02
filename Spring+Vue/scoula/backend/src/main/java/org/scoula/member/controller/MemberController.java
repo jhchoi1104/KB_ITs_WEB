@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.scoula.common.util.UploadFileName;
 import org.scoula.common.util.UploadFiles;
+import org.scoula.member.dto.ChangePasswordDTO;
 import org.scoula.member.dto.MemberDTO;
 import org.scoula.member.dto.MemberJoinDTO;
 import org.scoula.member.dto.MemberUpdateDTO;
@@ -56,5 +57,11 @@ public class MemberController {
     @PutMapping("/{username}")
     public ResponseEntity<MemberDTO> changeProfile(MemberUpdateDTO member) {
         return ResponseEntity.ok(service.update(member));
+    }
+
+    @PutMapping("/{username}/changepassword")
+    public ResponseEntity<?> changePassword(@RequestBody ChangePasswordDTO changePasswordDTO) {
+        service.changePassword(changePasswordDTO);
+        return ResponseEntity.ok().build();
     }
 }

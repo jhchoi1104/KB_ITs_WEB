@@ -74,6 +74,10 @@ public class BoardServiceImpl implements BoardService{
         log.info("update......."+board);
         mapper.update(board.toVO());
 
+        List<MultipartFile> files = board.getFiles();
+        if(files != null && !files.isEmpty()) {
+            upload(board.getNo(), files);
+        }
         return get(board.getNo());
     }
 

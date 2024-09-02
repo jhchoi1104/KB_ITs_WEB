@@ -20,6 +20,14 @@ export const useAuthStore = defineStore('auth', () => {
 
   const email = computed(() => state.value.user.email);
 
+  const habit = reactive('');
+
+  const stateScreen = ref(false);
+
+  const changeText = () => {
+    stateScreen.value = !stateScreen.value;
+  };
+
   const login = async (member) => {
     // state.value.token = 'test token';
     // state.value.user = {
@@ -49,7 +57,25 @@ export const useAuthStore = defineStore('auth', () => {
       console.log(state.value);
     }
   };
+
+  const changeProfile = (member) => {
+    state.value.user.email = member.email;
+    localStorage.setItem('auth', JSON.stringify(state.value));
+  };
+
   load();
 
-  return { state, username, email, isLogin, login, logout, getToken };
+  return {
+    state,
+    username,
+    email,
+    isLogin,
+    habit,
+    stateScreen,
+    changeText,
+    changeProfile,
+    login,
+    logout,
+    getToken,
+  };
 });

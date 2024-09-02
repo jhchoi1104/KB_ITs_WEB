@@ -1,5 +1,6 @@
 package org.scoula.member.mapper;
 
+import org.scoula.member.dto.ChangePasswordDTO;
 import org.scoula.security.account.domain.AuthVO;
 import org.scoula.security.account.domain.MemberVO;
 
@@ -13,4 +14,6 @@ public interface MemberMapper {
     int insertAuth(AuthVO auth);
 
     int update(MemberVO member);
+
+    int updatePassword(ChangePasswordDTO changePasswordDTO);
 }

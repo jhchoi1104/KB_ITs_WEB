@@ -116,7 +116,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests() // 경로별 접근 권한 설정
                 .antMatchers(HttpMethod.OPTIONS).permitAll()
-                .anyRequest().permitAll();
+                .anyRequest().permitAll(); // 나머지는 로그인된 경우 모두 허용
 
         http.httpBasic().disable()
                 .csrf().disable()

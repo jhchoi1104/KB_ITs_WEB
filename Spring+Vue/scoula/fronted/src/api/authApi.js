@@ -28,10 +28,6 @@ export default {
     console.log('AUTH POST: ', data);
     return data;
   },
-  async getEmail() {
-    const response = await api.get(BASE_URL);
-    return response.data;
-  },
   async update(member) {
     const formData = new FormData();
     formData.append('username', member.username);

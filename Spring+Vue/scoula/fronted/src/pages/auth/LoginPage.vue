@@ -1,8 +1,9 @@
 <script setup>
 import { computed, reactive, ref } from 'vue';
 import { useAuthStore } from '@/stores/auth';
-import { useRouter } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 
+const cr = useRoute();
 const router = useRouter();
 const auth = useAuthStore();
 
@@ -19,7 +20,11 @@ const login = async () => {
   console.log(member);
   try {
     await auth.login(member);
-    router.push('/');
+    if (cr.query.next) {
+      router.push({ name: cr.query.next });
+    } else {
+      router.push('/');
+    }
   } catch (e) {
     console.log('에러=========');
     error.value = e.response.data;

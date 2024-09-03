@@ -1,6 +1,5 @@
 <script setup>
 import { ref, reactive } from 'vue';
-import authApi from '@/api/authApi';
 import weatherAPI from '@/api/weatherAPI';
 import { useAuthStore } from '@/stores/auth';
 
@@ -9,13 +8,9 @@ const weather = ref('');
 
 const auth = useAuthStore();
 
-const getName = async () => {
-  email.value = await authApi.getEmail();
-};
 const getWeather = async () => {
   weather.value = await weatherAPI.getWeather();
 };
-getName();
 getWeather();
 </script>
 <template>

@@ -36,13 +36,13 @@ public class MemberController {
         return ResponseEntity.ok(service.join(member));
     }
 
-    @GetMapping("")
-    public String getEmail() {
-        String username = "admin";
-        MemberDTO member = service.get(username);
-        String email = member.getEmail();
-        return email;
-    }
+//    @GetMapping("")
+//    public String getEmail() {
+//        String username = "admin";
+//        MemberDTO member = service.get(username);
+//        String email = member.getEmail();
+//        return email;
+//    }
 
     @GetMapping("/{username}/avatar")
     public void getAvatar(@PathVariable String username, HttpServletResponse response) {

@@ -5,19 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6babc9ec-9170-4457-83bb-c7aa2a7802ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/domain/BoardAttachmentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/domain/BoardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/dto/BoardDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/mapper/BoardMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/board/service/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../boardapi/src/main/java/org/scoula/exception/ApiExceptionAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/mapper/BoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/mapper/BoardMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/board/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/member/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/java/org/scoula/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/resources/org/scoula/board/mapper/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/backend/src/main/resources/org/scoula/board/mapper/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/api/authApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/api/authApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/HomePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/auth/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/auth/LoginPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/board/BoardCreatePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/board/BoardCreatePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/board/BoardDetailPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/board/BoardDetailPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/board/BoardListPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/board/BoardListPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/board/BoardUpdatePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/pages/board/BoardUpdatePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/router/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/router/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/router/board.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring+Vue/scoula/fronted/src/router/board.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/common/util/UploadFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/common/util/UploadFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +189,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Gradle.BoardControllerTest.delete.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.BoardControllerTest.get.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.BoardControllerTest.update.executor&quot;: &quot;Run&quot;,
@@ -201,7 +210,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/KB_Fullstack/Web01_code/Spring/board/src/main/webapp/WEB-INF/views/layouts&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/KB_Fullstack/Web01_code/Spring/board&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -575,6 +584,13 @@
       <workItem from="1723600848487" duration="19000" />
       <workItem from="1723612582213" duration="177000" />
       <workItem from="1723624701607" duration="123000" />
+      <workItem from="1724051879812" duration="2432000" />
+      <workItem from="1724113024636" duration="19000" />
+      <workItem from="1724131486007" duration="2621000" />
+      <workItem from="1724643109800" duration="1000000" />
+      <workItem from="1725238711283" duration="540000" />
+      <workItem from="1725239504314" duration="20000" />
+      <workItem from="1725351673149" duration="1873000" />
     </task>
     <servers />
   </component>

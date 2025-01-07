@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.scoula.shop.mapper.ShopMapper">
+
+    <select id="getList" resultType="org.scoula.shop.domain.ShopVO">
+        select * from tbl_shop
+        order by number_sales desc
+    </select>
+
+    <select id="get" resultType="org.scoula.shop.domain.ShopVO">
+        select * from tbl_shop
+        where no= #{no}
+    </select>
+
+    <insert id="create">
+        insert into tbl_shop(item_name, brand_name, category,price,discount_rate,sex,img)
+        values(#{itemName}, #{brandName}, #{category},#{price},#{discountRate},#{sex},#{img})
+
+        <selectKey resultType="Long" keyProperty="no" keyColumn="no" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <update id="update">
+        update tbl_shop set
+                            item_name=#{itemName},
+                            brand_name=#{brandName},
+                            category=#{category},
+                            price=#{price},
+                            discount_rate=#{discountRate},
+                            sex=#{sex},
+                            img=#{img}
+        where no= ${no}
+    </update>
+
+    <delete id="delete">
+        delete from tbl_shop
+        where no=#{no}
+    </delete>
+
+
+</mapper>
